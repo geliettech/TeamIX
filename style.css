@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+header {
+  background: #1a1a1a;
+  color: #fff;
+  width: 100%;
+  padding: 18px 0;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px -5px 34px #808080;
+  z-index: 9;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 98%;
+  margin: 0 auto;
+  line-height: 2.8rem;
+}
+.logo {
+  font-weight: 500;
+  font-size: 38px;
+}
+nav {
+  display: flex;
+  gap: 18px;
+}
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+.nav-bar a:hover {
+  background: #fff;
+  color: #ff4500;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+main {
+  width: 100%;
+}
+.welcome-section {
+  background-image: url("./images/welcome5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  filter: grayscale(50%);
+  opacity: 10;
+  padding: 0 12px;
+  box-shadow: 0px 6px 34px #808080;
+}
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  margin: auto 0;
+}
+.welcome-section:hover {
+  filter: grayscale(0%);
+}
+
+.welcome-content h1 {
+  color: #ff4500;
+  font-size: 68px;
+  font-weight: 600;
+}
+.welcome-content p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+}
+.main-content {
+  padding: 68px 12px 18px;
+  width: 100%;
+  background: #fff;
+}
+.main-content h2 {
+  color: #ff4500;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  filter: grayscale(50%);
+}
+
+.main-content h2:hover {
+  filter: grayscale(0%);
+  text-decoration: underline;
+}
+.teams {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed #ff4500;
+  width: 228px;
+  border-radius: 4px;
+  filter: grayscale(50%);
+  box-shadow: 0px 6px 34px #808080;
+}
+.team img {
+  width: 100%;
+  border-bottom: 1px dashed #ff4500;
+  object-fit: cover;
+  height: 224px;
+  padding: 2px;
+  
+}
+.team:hover{
+    filter: grayscale(0%);
+}
+.team .Name,
+.team .Dept,
+.team .Level,
+.team a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #1a1a1a;
+  
+
+}
+.team h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.team span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.team a {
+    background-color: #1a1a1a;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 12px;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .team a:hover{
+    filter: grayscale(10%);
+    background: #ff4500;
+    
+    text-decoration: underline;
+}
+footer{
+    width: 100%;
+    background: #808080;
+}
+footer div {
+    font-size: 12px;
+    font-weight: 400;
+  color: #fff;
+  padding: 12px 18px;
+  text-align: right;
+}
+@media (max-width: 468px) {
+  .header-content {
+    flex-direction: column;
+  }
+  .welcome-section {
+    height: 120vh;
+  }
+  .welcome-content {
+    width: 100%;
+  }
+  .welcome-content h1 {
+    color: #ff4500;
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .welcome-content p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .teams {
+    justify-content: center;
+  }
+}
