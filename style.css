@@ -11,18 +11,18 @@ header {
   background: #1a1a1a;
   color: #fff;
   width: 100%;
-  padding: 18px 0;
+  padding: 24px 0;
   position: fixed;
   top: 0;
   box-shadow: 1px -5px 34px #808080;
-  z-index: 9;
+  z-index: 10;
 }
 .header-content {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  width: 98%;
+  width: 95%;
   margin: 0 auto;
   line-height: 2.8rem;
 }
@@ -50,26 +50,28 @@ main {
   width: 100%;
 }
 .welcome-section {
-  background-image: url("./images/welcome5.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.829),
+      rgba(13, 13, 13, 0.582),
+      rgba(0, 0, 0, 0.706)
+    ),
+    url("./images/welcome5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 95vh;
-  filter: grayscale(50%);
-  opacity: 10;
-  padding: 0 12px;
-  box-shadow: 0px 6px 34px #808080;
+  height: 100vh;
+  max-width: 100%;
+  border-bottom: 8px solid #222;
 }
 .welcome-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 50%;
+  width: 40%;
   margin: auto 0;
-}
-.welcome-section:hover {
-  filter: grayscale(0%);
+  padding: 0 38px;
 }
 
 .welcome-content h1 {
@@ -83,7 +85,7 @@ main {
   font-weight: 400;
 }
 .main-content {
-  padding: 68px 12px 18px;
+  padding: 68px 38px 48px;
   width: 100%;
   background: #fff;
 }
@@ -92,18 +94,13 @@ main {
   font-size: 42px;
   font-weight: 600;
   text-align: center;
-  filter: grayscale(50%);
 }
 
-.main-content h2:hover {
-  filter: grayscale(0%);
-  text-decoration: underline;
-}
 .teams {
   display: flex;
   justify-content: space-between;
-  margin-top: 18px;
-  gap: 14px;
+  margin-top: 32px;
+  gap: 38px;
   flex-wrap: wrap;
 }
 .team {
@@ -112,76 +109,83 @@ main {
   border: 1px dashed #ff4500;
   width: 228px;
   border-radius: 4px;
-  filter: grayscale(50%);
-  box-shadow: 0px 6px 34px #808080;
+  box-shadow: 0px 6px 34px #ff4500;
+  text-align: center;
 }
-.team img {
+.team:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  z-index: 8;
+}
+.avatar-wrapper {
+  width: 124px;
+  height: 124px;
+  margin: 10px auto 35px;
+}
+.avatar-wrapper img {
   width: 100%;
-  border-bottom: 1px dashed #ff4500;
+  height: 100%;
+  border-radius: 50%;
   object-fit: cover;
-  height: 224px;
-  padding: 2px;
-  
 }
-.team:hover{
-    filter: grayscale(0%);
-}
-.team .Name,
-.team .Dept,
-.team .Level,
-.team a {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  color: #1a1a1a;
-  
 
+.Name-Dept {
+  color: #1a1a1a;
+  padding: 18px 0;
 }
-.team h3{
-    font-size: 18px;
-    font-weight: 600;
+.Name-Dept h3 {
+  font-size: 22px;
+  font-weight: 600;
 }
-.team span{
-    font-size: 16px;
-    font-weight: 400;
+.Name-Dept p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.team .btn {
+  background-color: #1a1a1a;
+  border: none;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.team .btn:hover {
+  background-color: #ff4500;
+  transition: 1s;
 }
 .team a {
-    background-color: #1a1a1a;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-    padding: 3px 12px;
-    width: 50%;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .team a:hover{
-    filter: grayscale(10%);
-    background: #ff4500;
-    
-    text-decoration: underline;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
 }
-footer{
-    width: 100%;
-    background: #808080;
+.team a:hover{
+  text-decoration: underline;
+}
+
+.arrow-right .fa-arrow-right {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  background: #808080;
 }
 footer div {
-    font-size: 12px;
-    font-weight: 400;
+  font-size: 14px;
+  font-weight: 400;
   color: #fff;
   padding: 12px 18px;
   text-align: right;
 }
-@media (max-width: 468px) {
+@media (max-width: 968px) {
   .header-content {
     flex-direction: column;
   }
-  .welcome-section {
-    height: 120vh;
-  }
+
   .welcome-content {
     width: 100%;
+    padding: 0 18px;
   }
+
   .welcome-content h1 {
     color: #ff4500;
     font-size: 42px;
