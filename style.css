@@ -45,6 +45,7 @@ nav {
   color: #ff4500;
   padding: 4px 8px;
   border-radius: 4px;
+  transition: 0.8s;
 }
 main {
   width: 100%;
@@ -83,6 +84,23 @@ main {
   color: #fff;
   font-size: 22px;
   font-weight: 400;
+}
+.welcome-btn{
+  background-color: #ff4500;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 4px;
+  margin-top: 12px;
+  width: 40%;
+}
+.welcome-btn a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.welcome-btn a:hover{
+  text-decoration: underline;
 }
 .main-content {
   padding: 68px 38px 48px;
@@ -184,8 +202,9 @@ footer div {
   .welcome-content {
     width: 100%;
     padding: 0 18px;
-  }
-
+    justify-content: flex-end;
+    padding-bottom: 8px;
+    }
   .welcome-content h1 {
     color: #ff4500;
     font-size: 42px;

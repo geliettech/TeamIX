@@ -6,16 +6,202 @@
 
 body {
   font-family: "Times New Roman", Times, serif;
+  max-width: 100%;
+}
+.header-section {
+  width: 100%;
+  filter: grayscale(30%);
+  position: relative;
+}
+.header-content {
+  width: 100%;
+  background-color: #1a1a1a;
+  height: 289px;
+  padding: 8px 8px 0;
+}
+.Previous-page {
+  border: 2px solid #ff4500;
+  text-align: center;
+  width: 8%;
+  padding: 2px 6px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-radius: 4px;
+}
+.Previous-page a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.Previous-page a:hover {
+  text-decoration: underline;
+}
+.animating-profilepic {
+  position: absolute;
+  bottom: 0px;
+  left: 42%;
+  border-radius: 50%;
+  width: 248px;
+  height: 248px;
+  background-image: url("../../images/oge.png");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  border: 6px solid #fff;
 }
 
+.descSection {
+  width: 100%;
+}
+.descContent {
+  width: 90%;
+  margin: 12px auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #1a1a1a;
+}
+.descContent h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ff4500;
+  line-height: 2.5rem;
+}
+.descContent h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #808080;
+  line-height: 2rem;
+}
+.descContent p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.descContent p strong {
+  color: #ff4500;
+  filter: grayscale(40%);
+}
+.descContent button {
+  background-color: #ff4500;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 6px;
+  margin-top: 8px;
+}
+.descContent button a {
+  text-decoration: none;
+  color: #fff;
+}
+.descContent button a:hover {
+  text-decoration: underline;
+}
+.Skills-section {
+  width: 100%;
+  margin-top: 38px;
+}
+.Skills-container {
+  width: 90%;
+  margin: 0 auto;
+  filter: grayscale(20%);
+}
+.Skills-container h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ff4500;
+  line-height: 2.5rem;
+}
+.Skills-Content {
+  border-top: 1px solid #ff4500;
+  border-bottom: 1px solid #ff4500;
+  display: flex;
+  justify-content: space-between;
+}
+.skills {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.skills span:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #ff4500;
+}
+.Skills-section .fa-brands,
+.Skills-section .material-symbols-outlined {
+  font-size: 38px;
+  color: #ff4500;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.contact-section {
+  width: 100%;
+  margin: 38px 0 0;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+.contact-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+.contact-container h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0 0;
+}
+.contacts a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+.contacts a span:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.contacts .fa-brands,
+.contacts .fa-envelope {
+  font-size: 24px;
+}
+.Linkedin a:hover{
+  color: royalblue;
+}
+.github a:hover{
+  color: #808080;
+}
+.twitter a:hover{
+  color: royalblue;
+}
+.instagram a:hover{
+  color: #ff4500;
+}
+.gmail a:hover{
+  color: #ff4500;
+}
 footer {
   width: 100%;
-  background: #808080;
+  background-color: #1a1a1a;
 }
+
 footer div {
   font-size: 14px;
   font-weight: 400;
   color: #fff;
-  padding: 12px 18px;
+  padding: 48px 18px 8px;
   text-align: right;
 }

@@ -1,0 +1,82 @@
+body {
+  background-image: url("../../images/backgroundimage\ second.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+main {
+  padding: 28px;
+}
+.go-back a {
+  border: 1px solid orangered;
+  text-decoration: none;
+  color: orangered;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.go-back a:hover {
+  text-decoration: underline;
+}
+h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  box-shadow: 0px 0px 12px gray;
+  border: none;
+  border-radius: 4px;
+  transition: all 1s;
+  background-origin: orangered;
+}
+h1:hover {
+  transform: scale(1.1);
+}
+.img-text-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profileimg img {
+  width: 288px;
+  height: 288px;
+  border: 4px;
+  transition: all 1s;
+  border: 5px solid orangered;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.abt-me-txt {
+  margin-left: 22px;
+  font-size: 18.5px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.profileimg:hover {
+  transform: scale(1.1);
+}
+.abt-me-txt {
+  color: black;
+}
+
+.connect {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.connect a {
+  text-align: center;
+  text-decoration: none;
+  color: #ff4500;
+  margin: 4px;
+  padding: 4px;
+  border: 1px solid #ff4500;
+}
+.connect a:hover {
+  text-decoration: underline;
+}
