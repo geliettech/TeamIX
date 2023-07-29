@@ -7,50 +7,11 @@ body {
   max-width: 100%;
   font-family: "Times New Roman", Times, serif;
 }
-header {
-  background: #1a1a1a;
-  color: #fff;
-  width: 100%;
-  padding: 24px 0;
-  position: fixed;
-  top: 0;
-  box-shadow: 1px -5px 34px #808080;
-  z-index: 10;
-}
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  width: 95%;
-  margin: 0 auto;
-  line-height: 2.8rem;
-}
-.logo {
-  font-weight: 500;
-  font-size: 38px;
-}
-nav {
-  display: flex;
-  gap: 18px;
-}
-.nav-bar a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 20px;
-}
-.nav-bar a:hover {
-  background: #fff;
-  color: #ff4500;
-  padding: 4px 8px;
-  border-radius: 4px;
-  transition: 0.8s;
-}
 main {
   width: 100%;
 }
-.welcome-section {
+header {
+  width: 100%;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.829),
@@ -62,50 +23,108 @@ main {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  max-width: 100%;
   border-bottom: 8px solid #222;
+}
+.header-container {
+  width: 96%;
+  margin: 0 auto;
+}
+.header-section {
+  padding: 12px 0;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background: transparent;
+}
+.logo {
+  font-weight: 500;
+  font-size: 36px;
+  color: #fff;
+  border-top: 1px solid #ff4500;
+  border-bottom: 1px solid #ff4500;
+}
+nav {
+  display: flex;
+  gap: 22px;
+}
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  border: 1px solid #ff4500;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.nav-bar a:hover,
+a:active {
+  background: #fff;
+  color: #ff4500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: underline;
+  transition: 1s;
+}
+
+.welcome-section {
+  height: 100vh;
 }
 .welcome-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 40%;
+  width: 45%;
+  padding-right: 98px;
   margin: auto 0;
-  padding: 0 38px;
 }
 
 .welcome-content h1 {
   color: #ff4500;
-  font-size: 68px;
+  font-size: 62px;
   font-weight: 600;
 }
 .welcome-content p {
   color: #fff;
-  font-size: 22px;
+  font-size: 18.8px;
   font-weight: 400;
+  line-height: 1.5rem;
 }
-.welcome-btn{
+.welcome-btn {
   background-color: #ff4500;
   border: none;
-  border-radius: 12px;
-  padding: 14px 4px;
+  border-radius: 22px;
+  padding: 12px 0;
   margin-top: 12px;
-  width: 40%;
+  width: 30%;
 }
-.welcome-btn a{
+.welcome-btn a {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.welcome-btn a:hover{
+.welcome-btn a:hover {
   text-decoration: underline;
 }
-.main-content {
-  padding: 68px 38px 48px;
+.main-section {
   width: 100%;
-  background: #fff;
+  background-image: url("./images/drops-orange-watercolor.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-content {
+  width: 96%;
+  margin: 0 auto;
+  padding: 68px 0;
 }
 .main-content h2 {
   color: #ff4500;
@@ -117,11 +136,12 @@ main {
 .teams {
   display: flex;
   justify-content: space-between;
-  margin-top: 32px;
-  gap: 38px;
+  margin-top: 38px;
+  gap: 48px;
   flex-wrap: wrap;
 }
 .team {
+  background: #fff;
   display: flex;
   flex-direction: column;
   border: 1px dashed #ff4500;
@@ -175,7 +195,7 @@ main {
   font-weight: 400;
   text-decoration: none;
 }
-.team a:hover{
+.team a:hover {
   text-decoration: underline;
 }
 
@@ -185,7 +205,7 @@ main {
 
 footer {
   width: 100%;
-  background: #808080;
+  background: #1a1a1a;
 }
 footer div {
   font-size: 14px;
@@ -198,22 +218,26 @@ footer div {
   .header-content {
     flex-direction: column;
   }
-
+  .logo {
+    margin: 0 0 22px 0;
+    font-size: 28px;
+  }
+  .nav-bar a {
+    font-size: 14px;
+  }
   .welcome-content {
     width: 100%;
-    padding: 0 18px;
-    justify-content: flex-end;
-    padding-bottom: 8px;
-    }
+    padding-right: 0px;
+  }
   .welcome-content h1 {
-    color: #ff4500;
-    font-size: 42px;
-    font-weight: 600;
+    font-size: 38px;
   }
   .welcome-content p {
-    color: #fff;
     font-size: 18px;
-    font-weight: 400;
+    line-height: 1.4rem;
+  }
+  .welcome-btn {
+    width: 38%;
   }
   .teams {
     justify-content: center;
