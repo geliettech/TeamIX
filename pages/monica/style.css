@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../../images/moni.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  max-width: 100%;
+  min-height: 100vh;
+}
+.main {
+  padding: 12px 0;
+}
+.main button {
+  background-color: rgb(95, 128, 225);
+  border: none;
+  padding: 12px;
+  margin-left: 12px;
+  border-radius: 4px;
+}
+.main button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+.main button a:hover {
+  text-decoration: underline;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.box h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(4, 30, 110);
+  text-align: center;
+}
+.box p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+img {
+  padding: 10px;
+  border-radius: 40%;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+.contacts h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(4, 30, 110);
+  text-align: center;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 6px 0;
+}
+.conta a {
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+.conta a:hover {
+  text-decoration: underline;
+}

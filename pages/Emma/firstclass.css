@@ -1,0 +1,150 @@
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #081b30;
+    color: white;
+     display:inline-flex;
+}
+#header {
+    width: 100%;
+    height: 48px;
+    background-color: black;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orangered;
+}
+.first-header {
+    float: left;
+    padding-top: 3px;
+    padding-left: 50px;
+    padding-bottom: 7px;
+ }
+.first-header>a {
+    color: orangered;
+    text-decoration: none;
+    font-size: 32px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+.first-header>a>span {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    letter-spacing: 1px;
+   
+}
+.second-header {
+    float: right;
+    margin-top: 15px;
+    padding-right: 30px;
+
+}
+.second-header>a {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    border-right : 2px;
+    border-left: 2px;
+    letter-spacing: 1px;
+    
+}
+.second-header>a:hover {
+    color: orangered;
+    transition: 1s;
+}
+.content {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background: url() no-repeat;
+    background-size: 470px;
+    background-position: right;
+    mix-blend-mode: ;
+    width: 80%;
+    padding-right: 20px;
+
+}
+.home-content>p {
+    max-width: 400px;
+    margin: 10px 0 30px;
+    font-size: 16px;
+}
+.home-content>h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.5;
+    display: inline;
+}
+.home-content>span {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.home-content>h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: orangered;
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    height: 30px;
+
+}
+.btn-box>a {
+    text-decoration: none;
+    color: orangered;
+    background: black;
+    border: 2px solid orangered;
+    border-radius: 12px;
+    border-right: 2px;
+    border-left: 2px;
+    display: inline-flex;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    z-index: 1;
+} 
+.btn-box>a{
+    background: transparent;
+    color: orangered;
+}
+.btn-box>a:nth-child(2)::before {
+    background: orangered;
+}
+.btn-box>a::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: #081b26;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box>a:hover {
+    color: white;
+    transition: 1s;
+    
+}
+img {
+    width: 250;
+    height: 400px; 
+    border-radius: 400px;
+}
+img:hover {
+    background-color: orangered;
+    border: 2px solid black;
+    transition: 1s;
+}
+
