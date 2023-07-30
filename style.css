@@ -182,25 +182,28 @@ a:active {
 .team .btn {
   background-color: #1a1a1a;
   border: none;
-  padding: 12px 0;
   cursor: pointer;
+  padding: 12px 0;
 }
 .team .btn:hover {
   background-color: #ff4500;
   transition: 1s;
 }
-.team a {
+.team .btn a {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .team a:hover {
   text-decoration: underline;
 }
-
-.arrow-right .fa-arrow-right {
-  color: #fff;
+.team .btn a span:nth-of-type(2) {
+  margin-left: 8px;
 }
 
 footer {
