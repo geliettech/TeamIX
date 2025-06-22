@@ -1,4 +1,4 @@
-/* removal of default stying */
+/* Base reset */
 *,html {
   margin: 0;
   padding: 0;
@@ -23,30 +23,60 @@ main{
   margin: 0 auto;
 }
 /* header section stying */
-header{
-height: 128px;
-width: 100%;
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
 }
-header .header-content{
+header .header-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  justify-content: space-between;
 }
-header .header-content a{
+header .header-content .logo a {
+  font-size: 1.5rem;
+  font-weight: 800;
   text-decoration: none;
   color: #424242;
 }
-header .header-content .logo a{
-font-size: 20px;
-}
-header .header-content nav {
+/* Navigation styles */
+header .header-content .nav {
   display: flex;
-  column-gap: 20px;
+  gap: 1.5rem;
 }
-header .header-content nav a{
-  font-size: 16px;
+
+header .header-content .nav a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  transition: color 0.3s ease;
+    font-size: 16px;
+}
+header .header-content .nav a:hover {
+  color: #007BFF;
+}
+/* Icon Button */
+.hamburger-icon {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.icon-menu {
+  display: none;
+}
+/* Show correct icon */
+.hamburger-icon .open-icon {
+  display: inline;
+}
+
+.hamburger-icon.active .open-icon {
+  display: none;
+}
+
+.hamburger-icon.active .close-icon {
+  display: inline;
 }
 
 
@@ -59,6 +89,7 @@ header .header-content nav a{
  font-weight: 300;
   line-height: 2rem;
   color: #5a5a5a;
+  margin-top: 1rem;
 }
 .hero-section .hero-section-content p{
   font-size: 28px;
@@ -103,7 +134,7 @@ header .header-content nav a{
   line-height: 2rem;
 }
 .teams .details p{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
 }
 /* Footer styling */
@@ -113,4 +144,45 @@ footer{
   text-align: center;
   padding: 2rem;
 }
-/* styling for tablet and mobile view */
+/* Responsive styles */
+@media (max-width: 992px) {
+  .teams {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Hides nav initially */
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav.active {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+  .hero-section .hero-section-content p {
+    padding: 0 1rem;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .teams {
+    grid-template-columns: 1fr;
+  }
+}

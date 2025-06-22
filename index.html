@@ -19,28 +19,41 @@
   </head>
   <body>
     <main>
-      <!-- header section -->
-      <header>
-        <div class="header-content">
-          <!-- logo -->
-          <div class="logo">
-            <a href="#" target="_blank" rel="noopener noreferrer">TEAM IX</a>
-          </div>
-          <nav>
-            <a href="#" target="_blank" rel="noopener noreferrer">About</a>
+<!-- header section -->
+<header>
+  <div class="header-content">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#">TEAM IX</a>
+    </div>
 
-            <a href="#" target="_blank" rel="noopener noreferrer">Services </a>
+    <!-- Hamburger Toggle Button -->
+    <button class="hamburger-icon" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+      <!-- Hamburger Icon -->
+      <svg class="icon-menu open-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+      </svg>
 
-            <a href="#" target="_blank" rel="noopener noreferrer"> Our Work </a>
+      <!-- Close Icon -->
+      <svg class="icon-menu close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M6 6l12 12M6 18L18 6" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
 
-            <a href="#" target="_blank" rel="noopener noreferrer">Blog</a>
+    <!-- Navigation -->
+    <nav id="nav-menu" class="nav">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Our Work</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
 
-            <a href="#" target="_blank" rel="noopener noreferrer">Careers</a>
 
-            <a href="#" target="_blank" rel="noopener noreferrer">Contact</a>
-          </nav>
-        </div>
-      </header>
+
       <!-- Hero Section ===================================== -->
       <section class="hero-section">
         <div class="hero-section-content">
@@ -195,5 +208,19 @@
         Copywrite &copy; 2023, all right reserved.
       </div>
     </footer>
+    <!-- JavaScript -->
+    <script>
+      const hamburgerBtn = document.querySelector('.hamburger-icon');
+      const nav = document.querySelector('.nav');
+    
+      hamburgerBtn.addEventListener('click', () => {
+        const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+        hamburgerBtn.setAttribute('aria-expanded', !expanded);
+        nav.classList.toggle('active');
+        hamburgerBtn.classList.toggle('active');
+      });
+    </script>
+    
+    
   </body>
 </html>
